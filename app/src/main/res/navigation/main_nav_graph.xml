@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:app="http://schemas.android.com/apk/res-auto"
+             android:id="@+id/main_nav_graph"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/loginFragment2">
+
+    <fragment
+        tools:layout="@layout/fragment_login"
+        android:id="@+id/loginFragment2"
+        android:name="com.br.guty.mycar.presentation.login.LogInFragment"
+        android:label="LoginFragment" >
+        <action
+            android:id="@+id/action_loginFragment2_to_carFragment2"
+            app:destination="@id/carFragment2" />
+    </fragment>
+    <fragment
+        tools:layout="@layout/fragment_car"
+        android:id="@+id/carFragment2"
+        android:name="com.br.guty.mycar.presentation.car.CarFragment"
+        android:label="CarFragment" />
+</navigation>
